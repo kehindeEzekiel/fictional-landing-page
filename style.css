@@ -1,0 +1,167 @@
+*{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Agbalumo';
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+.hero {
+    padding: 50px 20px;
+    background-color: #818589;
+    
+}
+
+.hero h1 {
+    font-size: 2em;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 91, 187, 0.5);
+}
+
+.cta-button.clicked {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.learn-more {
+    background-color: #28a745;
+}
+
+.learn-more:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(33, 136, 56, 0.5);
+}
+
+
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+.feature {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.feature img {
+    width: 100%;
+    height: 100%;
+    flex: 5;
+    min-width: 300px;
+    text-align: center;
+    background: #fff;
+    transform: scale(0.98px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature img:hover{
+    transform: scale(0.3);
+    text-wrap: 5;
+    transition: transform 0.2s ease;
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1em;
+
+}
+
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .cta-button {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        font-size: 0.85em;
+        padding: 10px 20px;
+    }
+
+    .footer {
+        font-size: 0.9em;
+    }
+}
